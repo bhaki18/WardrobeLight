@@ -30,6 +30,9 @@ void loop() {
 
   // Calcola la distanza in cm
   float distanza = durata * 0.0343 / 2;
+  Serial.print("distanza:");
+  Serial.print(distanza);
+  Serial.print("cm \n");
 
   if(distanza > 70){
     digitalWrite(LED_1,HIGH);
